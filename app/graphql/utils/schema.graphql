@@ -1,0 +1,18 @@
+type SendSms {
+  Message: String
+  RequestId: String
+  BizId: String
+  Code: String
+}
+
+type File {
+  filename: String!
+  mimetype: String!
+  encoding: String!
+}
+
+input Mail {
+  to: String!
+  subject: String!
+  html: String!
+}

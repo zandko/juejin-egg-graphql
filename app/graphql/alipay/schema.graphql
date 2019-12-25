@@ -1,0 +1,8 @@
+input Pay {
+  # 订单描述
+  body: String
+  # 订单标题
+  subject: String!
+  # 订单总金额
+  total_amount: String!
+}

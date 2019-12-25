@@ -8,7 +8,27 @@ const plugin: EggPlugin = {
   // },
   graphql: {
     enable: true,
-    package: 'egg-graphql',
+    package: '@switchdog/egg-graphql',
+  },
+  sequelize: {
+    enable: true,
+    package: 'egg-sequelize',
+  },
+  cors: {
+    enable: true,
+    package: 'egg-cors',
+  },
+  redis: {
+    enable: true,
+    package: 'egg-redis',
+  },
+  ejs: {
+    enable: true,
+    package: 'egg-view-ejs',
+  },
+  io: {
+    enable: true,
+    package: 'egg-socket.io',
   },
 };
 

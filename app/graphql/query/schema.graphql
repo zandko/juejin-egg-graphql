@@ -1,0 +1,20 @@
+type Query {
+  users(
+    params: QueryBuilder
+  ): [User!]
+  user(id: ID!): User
+  login(data: Authentication): String!
+  githubURL: String!
+  hellos: [Hello!]
+}
+
+input QueryBuilder {
+  # 排序字段
+  orderBy: String
+  # enum: ['ASC', 'DESC']
+  orderType: String
+  # 等价于 pageSize
+  limit: Int
+  # 偏移量 类似 pageNum
+  offset: Int
+}

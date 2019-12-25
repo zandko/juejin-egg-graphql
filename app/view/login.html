@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="login()">GitHub登录</button>
+</body>
+</html>
+
+<script>
+
+function login() {
+  const link = `https://github.com/login/oauth/authorize?client_id=<%= client_id %>&scope=<%= scope %>&state=${Date.now()}`;
+  const link = 'https://github.com/login/oauth/authorize?client_id=52a36545d74a3dbb7e82&scope=user&state=1576569178606';
+  window.open(link,'','width=800,height=500,location=no,menubar=no')
+
+  window.addEventListener('message', function (e) {
+    console.log('获取token成功', e.data)
+  }, false)
+}
+</script>

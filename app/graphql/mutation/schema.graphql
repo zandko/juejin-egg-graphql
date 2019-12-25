@@ -1,0 +1,7 @@
+type Mutation {
+  sendSms(PhoneNumbers: String!) : SendSms
+  register(data: Register!): User
+  singleUpload(file: Upload!) : File!
+  pay(data: Pay) : String!
+  sendMail(data: Mail!) : String!
+}
