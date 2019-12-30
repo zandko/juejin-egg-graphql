@@ -40,6 +40,7 @@
     "egg-socket.io": "^4.1.6",
     "egg-view-ejs": "^2.0.0",
     "graphql-upload": "^9.0.0",
+    "jsonwebtoken": "^8.5.1",
     "koa-json-error": "^3.1.2",
     "lodash": "^4.17.15",
     "mysql2": "^2.0.2",
