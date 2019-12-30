@@ -7,7 +7,13 @@ const read = (filename: string) => {
 };
 
 export default (appInfo: EggAppInfo) => {
-  const config = {} as PowerPartial<EggAppConfig>;
+  const config = {
+    env: 'prod', // 推荐云函数的 egg 运行环境变量修改为 prod
+    rundir: '/tmp',
+    logger: {
+      dir: '/tmp',
+    },
+  } as PowerPartial<EggAppConfig>;
 
   // override config from framework / plugin
   // use for cookie sign key, should change to your own and keep security
@@ -47,9 +53,12 @@ export default (appInfo: EggAppInfo) => {
 
   config.sequelize = {
     dialect: 'mysql',
-    host: '127.0.0.1',
+    host: '47.100.194.4',
     port: 3306,
     database: 'lovelp',
+    username: 'root',
+    password: 'root',
+    timezone: '+08:00',
     define: {
       freezeTableName: false,
       underscored: true,
@@ -60,8 +69,8 @@ export default (appInfo: EggAppInfo) => {
   config.redis = {
     client: {
       port: 6379,          // Redis port
-      host: '127.0.0.1',   // Redis host
-      password: '',
+      host: '47.100.194.4',   // Redis host
+      password: '123456',
       db: 0,
     },
   };
@@ -79,9 +88,9 @@ export default (appInfo: EggAppInfo) => {
       },
     },
     redis: {
-      host: '127.0.0.1',
+      host: '47.100.194.4',
       port: 6379,
-      auth_pass: '',
+      auth_pass: '123456',
       db: 0,
     },
   };

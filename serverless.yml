@@ -1,0 +1,20 @@
+# serverless.yml
+
+MyComponent:
+  component: "@serverless/tencent-egg"
+  inputs:
+    region: ap-guangzhou
+    functionName: egg-graphql-function
+    code: ./
+    functionConf:
+      timeout: 10
+      memorySize: 128
+      environment:
+        variables:
+          TEST: vale
+      vpcConfig:
+        subnetId: ''
+        vpcId: ''
+    apigatewayConf:
+      protocol: https
+      environment: release

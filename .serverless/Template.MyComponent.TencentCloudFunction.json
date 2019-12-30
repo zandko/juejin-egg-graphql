@@ -1,0 +1,11 @@
+{
+  "deployed": {
+    "Name": "egg-graphql-function",
+    "Runtime": "Nodejs8.9",
+    "Handler": "entry.handler",
+    "MemorySize": 128,
+    "Timeout": 10,
+    "Region": "ap-guangzhou",
+    "Description": "This is a template function"
+  }
+}

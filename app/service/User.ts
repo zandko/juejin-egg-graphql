@@ -1,5 +1,5 @@
 import { Service } from 'egg';
-import { Op } from 'Sequelize';
+import { Op } from 'sequelize';
 import * as _ from 'lodash';
 import { IQueryBuilderData } from '../types/index';
 

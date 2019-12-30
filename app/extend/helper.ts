@@ -53,7 +53,7 @@ export default {
    * @param {number} code 状态码
    */
   success(ctx: Context, data: any, code?: number) {
-    const timestamp = (0 | Date.now() / 1000).toString();
+    const timestamp = (Date.now() / 1000).toString();
     ctx.body = {
       timestamp,
       code,
@@ -69,7 +69,7 @@ export default {
    * @param {string} message  错误信息
    */
   fail(ctx: Context, code: number, message: any) {
-    const timestamp = (0 | Date.now() / 1000).toString();
+    const timestamp = (Date.now() / 1000).toString();
     ctx.body = {
       timestamp,
       code,

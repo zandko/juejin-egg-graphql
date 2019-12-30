@@ -1,0 +1,6 @@
+{
+  "region": "ap-guangzhou",
+  "functionName": "egg-graphql-function",
+  "apiGatewayServiceId": "service-3g6ic9wq",
+  "url": "http://service-3g6ic9wq-1257157691.gz.apigw.tencentcs.com/release/"
+}

@@ -8,7 +8,7 @@
     "declarations": true
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-example",
+    "start": "egg-scripts start --dts --daemon --title=egg-server-example --sticky",
     "stop": "egg-scripts stop --title=egg-server-example",
     "dev": "egg-bin dev --dts --sticky",
     "debug": "egg-bin debug",
@@ -20,7 +20,7 @@
     "autod": "autod",
     "lint": "tslint --project . -c tslint.json",
     "clean": "ets clean",
-    "db:model": "egg-sequelize-auto -o ./app/model -h localhost -p 3306 -d lovelp -u root -x ",
+    "db:model": "egg-sequelize-auto -o ./app/model -h http://47.100.194.4 -p 3306 -d lovelp -u root -x root",
     "db:init": "npx sequelize migration:generate --name=init-name",
     "db:up": "npx sequelize db:migrate && npm run db:model",
     "db:down": "npx sequelize db:migrate:undo",

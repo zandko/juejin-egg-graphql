@@ -1,25 +1,25 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "root",
     "database": "lovelp",
-    "host": "127.0.0.1",
+    "host": "47.100.194.4",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "password": "root",
+    "database": "lovelp",
+    "host": "47.100.194.4",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "password": "root",
+    "database": "lovelp",
+    "host": "47.100.194.4",
     "dialect": "mysql",
     "operatorsAliases": false
   }

@@ -1,0 +1,5 @@
+{
+  "components": {
+    "MyComponent": "/root/.serverless/components/registry/npm/@serverless/tencent-egg@0.1.4/node_modules/@serverless/tencent-egg"
+  }
+}
