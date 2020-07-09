@@ -53,9 +53,9 @@ export default (appInfo: EggAppInfo) => {
 
   config.sequelize = {
     dialect: 'mysql',
-    host: '47.100.194.4',
+    host: 'xxxx',
     port: 3306,
-    database: 'lovelp',
+    database: 'xxxx',
     username: 'root',
     password: 'root',
     timezone: '+08:00',
@@ -69,7 +69,7 @@ export default (appInfo: EggAppInfo) => {
   config.redis = {
     client: {
       port: 6379,          // Redis port
-      host: '47.100.194.4',   // Redis host
+      host: 'xxxxxx',   // Redis host
       password: '123456',
       db: 0,
     },
@@ -88,7 +88,7 @@ export default (appInfo: EggAppInfo) => {
       },
     },
     redis: {
-      host: '47.100.194.4',
+      host: 'xxxxxxx',
       port: 6379,
       auth_pass: '123456',
       db: 0,
@@ -116,16 +116,16 @@ export default (appInfo: EggAppInfo) => {
   config.github = {
     login_url: 'https://github.com/login/oauth/authorize',
     // github Client ID
-    client_id: '52a36545d74a3dbb7e82',
+    client_id: 'xxxxxxxxxxxxx',
     // github Client Secret
-    client_secret: '0631d5af073d397f3223ea31c8f7ed3f361753f4',
+    client_secret: 'xxxxxxxxx',
     // 此参数表示只获取用户信息
     scope: [ 'user' ],
   };
 
   config.aliyun = {
-    accessKeyId: 'LTAIwPm6KYRHsSZZ',
-    accessKeySecret: 'Cx5ct1FNRb6kxjaIIUQrr6SYbJVkMJ',
+    accessKeyId: 'xxxxxx',
+    accessKeySecret: 'xxxxxxxxxxxxxx',
     endpoint: 'https://dysmsapi.aliyuncs.com',
     apiVersion: '2017-05-25',
     sendSms: {
@@ -136,14 +136,14 @@ export default (appInfo: EggAppInfo) => {
   };
 
   config.qiniu = {
-    AccessKey: 'FgXzSBikhWJdaPbOLF3A8iUmMS6vkVzAYV3uY81v',
-    SecretKey: 'vb3rgr4AxEQXYnoEQBLhsjoBuKhJwMlb_TYeTLBx',
+    AccessKey: 'xxxxxxx',
+    SecretKey: 'xxxxxxx',
     Bucket: 'egg-lottery',
     Domain: 'q1lzhixqp.bkt.clouddn.com',
   };
 
   config.alipay = {
-    appId: '2016091700531963',
+    appId: 'xxxxxxxx',
     privateKey: read('./keys/app_priv_key.pem'),
     alipayPublicKey : read('./keys/alipay_public_key.pem'),
     gateway: 'https://openapi.alipaydev.com/gateway.do',
@@ -155,8 +155,8 @@ export default (appInfo: EggAppInfo) => {
     host: 'smtp.163.com',
     port: 465,
     auth: {
-      user: 'push_over@163.com',
-      pass: 'guodamiao0',
+      user: 'xxxxx',
+      pass: 'xxxxxx',
     },
   };
 
