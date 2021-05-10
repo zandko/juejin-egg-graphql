@@ -42,7 +42,7 @@
     "graphql-upload": "^9.0.0",
     "jsonwebtoken": "^8.5.1",
     "koa-json-error": "^3.1.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mysql2": "^2.0.2",
     "nodemailer": "^6.4.2",
     "qiniu": "^7.2.2",
